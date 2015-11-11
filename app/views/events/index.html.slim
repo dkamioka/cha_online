@@ -1,0 +1,10 @@
+- unless @events.empty?
+  table
+    - @events.each do |event|
+      tr
+        td.name = event.name
+        td.date = event.date
+- else
+  p 
+  | No items found.  Please add some Events.
+    Thank you!
